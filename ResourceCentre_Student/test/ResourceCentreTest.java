@@ -171,7 +171,7 @@ public class ResourceCentreTest {
 				
 				ResourceCentre.addChromebook(chromebookList, cb1);
 				
-				// normallyyyyy
+				// normal
 				Boolean ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0011", "8-8-2020" );
 				assertTrue("Test if an available item is ok to loan?", ok);
 				assertFalse(chromebookList.get(0).getIsAvailable());
@@ -214,7 +214,7 @@ public class ResourceCentreTest {
 	}
 	@Test
 	public void testDoReturnChromebook() {
- https://github.com/ButterBo/ResourceCentre_student.git
+ //https://github.com/ButterBo/ResourceCentre_student.git
 				assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 				ResourceCentre.addChromebook(chromebookList, cb1);
 				//error
