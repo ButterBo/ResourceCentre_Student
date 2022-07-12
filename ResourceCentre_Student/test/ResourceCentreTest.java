@@ -184,7 +184,7 @@ public class ResourceCentreTest {
 				assertFalse("Test that un-available item is NOT ok to loan?", ok);
 				
 				//error condition
-				ok = ResourceCentre.doLoanChromebook(chromebookList, "CC0013", "8-8-2020" );
+				ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0013", "8-8-2020" );
 				assertFalse("Test that non-esiting item is NOT ok to loan?", ok);
 		
 	}
