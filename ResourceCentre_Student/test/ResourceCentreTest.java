@@ -40,7 +40,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testAddCamcorder() {
-		// Item list is not null, so that can add a new item
+		// Item list is not null, so that can add a new itemmmmmmmmmmmmmmmmmm
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
 		//Given an empty list, after adding 1 item, the size of the list is 1
@@ -124,7 +124,7 @@ public class ResourceCentreTest {
 			
 				assertEquals("Check that ViewAllChromebookList", testOutput, allChromebook);
 	}
-
+// hgjhjhjfmvmvm
 	@Test
 	public void testDoLoanCamcorder() {
 //test2
@@ -201,10 +201,10 @@ public class ResourceCentreTest {
 		ResourceCentre.addCamcorder(camcorderList, cc2);
 		cc2.setIsAvailable(false);
 		isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0012");
-		assertTrue("Test if loaned out amcorder CC0012 is returned- true", isReturned);
+		assertTrue("Test if loaned out camcorder CC0012 is returned- true", isReturned);
 		//error
 		isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0013");
-		assertFalse("Test if non-existing amcorder CC0013 is returned - false?", isReturned);
+		assertFalse("Test if non-existing camcorder CC0013 is returned - false?", isReturned);
 		
 	}
 	@Test
@@ -219,7 +219,11 @@ public class ResourceCentreTest {
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
 				cb2.setIsAvailable(false);
+<<<<<<< HEAD
+				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+=======
 				isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0012");
+>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
 				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
 				//error
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
