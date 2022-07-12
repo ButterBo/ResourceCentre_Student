@@ -160,7 +160,11 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testDoLoanChromebook() {
+//<<<<<<< HEAD
 		//fail("Not yet implemented"); 
+//=======
+		//fail("Not yet implemented");
+//>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
 		//boundary
 				assertNotNull("test if there is valid Chromebook arraylist to loan from", chromebookList);
 				
@@ -218,12 +222,17 @@ public class ResourceCentreTest {
 				assertFalse("Test if available Chromebook CB0011 is returned -false?", isReturned);		
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
+// <<<<<<< HEAD
 				cb2.setIsAvailable(false);
 
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
 
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
-
+// =======
+				cb2.setIsAvailable(false);
+				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+				isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0012");
+//>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
 				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
 				//error
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
