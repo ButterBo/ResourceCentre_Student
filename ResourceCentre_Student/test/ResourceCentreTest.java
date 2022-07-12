@@ -40,7 +40,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testAddCamcorder() {
-		// Item list is not null, so that can add a new item
+		// Item list is not null, so that can add a new itemmmmmmmmmmmmmmmmmm
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
 		//Given an empty list, after adding 1 item, the size of the list is 1
