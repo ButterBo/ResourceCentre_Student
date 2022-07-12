@@ -218,7 +218,7 @@ public class ResourceCentreTest {
 				assertFalse("Test if available Chromebook CB0011 is returned -false?", isReturned);		
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
-				cc2.setIsAvailable(false);
+				cb2.setIsAvailable(false);
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
 				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
 				//error
