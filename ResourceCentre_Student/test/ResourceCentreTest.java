@@ -219,7 +219,7 @@ public class ResourceCentreTest {
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
 				cc2.setIsAvailable(false);
-				isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0012");
+				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
 				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
 				//error
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
