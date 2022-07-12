@@ -127,7 +127,8 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testDoLoanCamcorder() {
-//test
+//test2
+		
 		//boundary
 		assertNotNull("test if there is valid Camcorder arraylist to loan from", camcorderList);
 		
