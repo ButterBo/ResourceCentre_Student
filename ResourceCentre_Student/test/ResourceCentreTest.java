@@ -40,7 +40,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testAddCamcorder() {
-		// Item list is not null, so that can add a new item
+		// Item list is not null, so that can add a new itemmmmmmmmmmmmmmmmmm
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
 		//Given an empty list, after adding 1 item, the size of the list is 1
@@ -109,7 +109,7 @@ public class ResourceCentreTest {
 				//test if the list of chromebook retrieved from the SourceCentre is empty
 				String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
 				String testOutput = "";
-				assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
+				assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
 						
 				//Given an empty list, after adding 2 items, test if the size of the list is 2
 				ResourceCentre.addChromebook(chromebookList, cb1);
@@ -160,7 +160,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testDoLoanChromebook() {
-		//fail("Not yet implemented");
+		//fail("Not yet implemented"); Hello
 		//boundary
 				assertNotNull("test if there is valid Chromebook arraylist to loan from", chromebookList);
 				
@@ -209,7 +209,7 @@ public class ResourceCentreTest {
 	}
 	@Test
 	public void testDoReturnChromebook() {
-		//fail("Not yet implemented");
+		//fail("Not yet implemented");awdawd
 		//boundary
 				assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 				ResourceCentre.addChromebook(chromebookList, cb1);
@@ -219,7 +219,11 @@ public class ResourceCentreTest {
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
 				cb2.setIsAvailable(false);
+<<<<<<< HEAD
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+=======
+				isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0012");
+>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
 				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
 				//error
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
