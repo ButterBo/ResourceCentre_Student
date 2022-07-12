@@ -8,6 +8,7 @@ import org.junit.Test;
 // C206 AY2022 SEM1 - Eclipse 21-09 JDK16
 public class ResourceCentreTest {
 	// prepare test data
+	// testing
 	private Camcorder cc1;
 	private Camcorder cc2;
 	private Camcorder cc3;
@@ -109,12 +110,12 @@ public class ResourceCentreTest {
 				//test if the list of chromebook retrieved from the SourceCentre is empty
 				String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
 				String testOutput = "";
-				assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
+				assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 						
 				//Given an empty list, after adding 2 items, test if the size of the list is 2
 				ResourceCentre.addChromebook(chromebookList, cb1);
 				ResourceCentre.addChromebook(chromebookList, cb2);
-				assertEquals("Test if that Camcorder arraylist size is 2?", 2, chromebookList.size());
+				assertEquals("Test if that Chromebook arraylist size is 2?", 2, chromebookList.size());
 				
 				//test if the expected output string same as the list of chromebook retrieved from the SourceCentre
 				allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
@@ -160,7 +161,11 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testDoLoanChromebook() {
+//<<<<<<< HEAD
+		//fail("Not yet implemented"); 
+//=======
 		//fail("Not yet implemented");
+//>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
 		//boundary
 				assertNotNull("test if there is valid Chromebook arraylist to loan from", chromebookList);
 				
@@ -174,7 +179,7 @@ public class ResourceCentreTest {
 				
 						
 				//error condition
-				ok = ResourceCentre.doLoanChromebook(chromebookList, "CC0011", "8-8-2020" );
+				ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0011", "8-8-2020" );
 				assertFalse("Test if an same item is NOT ok to loan again?", ok);	
 				
 				//error condition
@@ -184,7 +189,7 @@ public class ResourceCentreTest {
 				assertFalse("Test that un-available item is NOT ok to loan?", ok);
 				
 				//error condition
-				ok = ResourceCentre.doLoanChromebook(chromebookList, "CC0013", "8-8-2020" );
+				ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0013", "8-8-2020" );
 				assertFalse("Test that non-esiting item is NOT ok to loan?", ok);
 		
 	}
@@ -201,16 +206,15 @@ public class ResourceCentreTest {
 		ResourceCentre.addCamcorder(camcorderList, cc2);
 		cc2.setIsAvailable(false);
 		isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0012");
-		assertTrue("Test if loaned out amcorder CC0012 is returned- true", isReturned);
+		assertTrue("Test if loaned out camcorder CC0012 is returned- true", isReturned);
 		//error
 		isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0013");
-		assertFalse("Test if non-existing amcorder CC0013 is returned - false?", isReturned);
+		assertFalse("Test if non-existing camcorder CC0013 is returned - false?", isReturned);
 		
 	}
 	@Test
 	public void testDoReturnChromebook() {
-		//fail("Not yet implemented");
-		//boundary
+ //https://github.com/ButterBo/ResourceCentre_student.git
 				assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 				ResourceCentre.addChromebook(chromebookList, cb1);
 				//error
@@ -218,8 +222,17 @@ public class ResourceCentreTest {
 				assertFalse("Test if available Chromebook CB0011 is returned -false?", isReturned);		
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
-				cc2.setIsAvailable(false);
-				isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0012");
+// <<<<<<< HEAD
+				cb2.setIsAvailable(false);
+
+				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+
+				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+// =======
+				cb2.setIsAvailable(false);
+				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+//>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
 				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
 				//error
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
