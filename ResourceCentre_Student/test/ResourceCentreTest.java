@@ -219,11 +219,8 @@ public class ResourceCentreTest {
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
 				cb2.setIsAvailable(false);
-<<<<<<< HEAD
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
-=======
 				isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0012");
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
 				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
 				//error
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
