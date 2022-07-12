@@ -166,7 +166,7 @@ public class ResourceCentreTest {
 				
 				ResourceCentre.addChromebook(chromebookList, cb1);
 				
-				// normal
+				// normallyyyyy
 				Boolean ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0011", "8-8-2020" );
 				assertTrue("Test if an available item is ok to loan?", ok);
 				assertFalse(chromebookList.get(0).getIsAvailable());
