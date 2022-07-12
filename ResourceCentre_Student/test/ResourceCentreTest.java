@@ -160,7 +160,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testDoLoanChromebook() {
-		//fail("Not yet implemented"); Hello
+		//fail("Not yet implemented");
 		//boundary
 				assertNotNull("test if there is valid Chromebook arraylist to loan from", chromebookList);
 				
