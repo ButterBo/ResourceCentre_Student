@@ -109,12 +109,12 @@ public class ResourceCentreTest {
 				//test if the list of chromebook retrieved from the SourceCentre is empty
 				String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
 				String testOutput = "";
-				assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
+				assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 						
 				//Given an empty list, after adding 2 items, test if the size of the list is 2
 				ResourceCentre.addChromebook(chromebookList, cb1);
 				ResourceCentre.addChromebook(chromebookList, cb2);
-				assertEquals("Test if that Camcorder arraylist size is 2?", 2, chromebookList.size());
+				assertEquals("Test if that Chromebook arraylist size is 2?", 2, chromebookList.size());
 				
 				//test if the expected output string same as the list of chromebook retrieved from the SourceCentre
 				allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
@@ -174,7 +174,7 @@ public class ResourceCentreTest {
 				
 						
 				//error condition
-				ok = ResourceCentre.doLoanChromebook(chromebookList, "CC0011", "8-8-2020" );
+				ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0011", "8-8-2020" );
 				assertFalse("Test if an same item is NOT ok to loan again?", ok);	
 				
 				//error condition
