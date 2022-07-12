@@ -124,7 +124,7 @@ public class ResourceCentreTest {
 			
 				assertEquals("Check that ViewAllChromebookList", testOutput, allChromebook);
 	}
-
+// hgjhjhjfmvmvm
 	@Test
 	public void testDoLoanCamcorder() {
 //test2
