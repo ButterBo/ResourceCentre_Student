@@ -22,7 +22,7 @@ public class ResourceCentreTest {
 	public ResourceCentreTest() {
 		super();
 	}
-	
+//	Yulong was here
 	@Before
 	public void setUp() throws Exception {
 		// prepare test data
@@ -233,7 +233,7 @@ public class ResourceCentreTest {
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
 				isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0012");
 //>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_student.git
-				assertTrue("Test if loaned out chromebook CB0012 is returned- true", isReturned);
+				assertTrue("Test if loaned out chromebook CB0012 is returned - true", isReturned);
 				//error
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
 				assertFalse("Test if non-existing chromebook CB0013 is returned - false?", isReturned);
