@@ -16,7 +16,7 @@ public class Item {
 		return assetTag;
 	}
 
-	//yong xuannnn o.o
+	//yong xuannnn oo.oo
 	public String getDescription() {
 		return description;
 	}
