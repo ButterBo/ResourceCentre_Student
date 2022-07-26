@@ -15,8 +15,7 @@ public class Item {
 	public String getAssetTag() {
 		return assetTag;
 	}
-
-// heelpppp yongxuan
+//wererytuyiu
 	public String getDescription() {
 		return description;
 	}
