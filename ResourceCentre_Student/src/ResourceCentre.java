@@ -97,6 +97,7 @@ public class ResourceCentre {
 	}
 
 	public static void menu() {
+		// Nicole was here
 		ResourceCentre.setHeader("RESOURCE CENTRE APP");
 		System.out.println("1. Display Inventory");
 		System.out.println("2. Add item");
