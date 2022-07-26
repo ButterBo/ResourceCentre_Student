@@ -97,6 +97,7 @@ public class ResourceCentre {
 	}
 
 	public static void menu() {
+		// Nicole was here
 		ResourceCentre.setHeader("RESOURCE CENTRE APP");
 		System.out.println("1. Display Inventory");
 		System.out.println("2. Add item");
@@ -146,6 +147,7 @@ public class ResourceCentre {
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
+		// Zahid Wuz Here
 		output += String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
 				"AVAILABLE", "DUE DATE","OPERATING SYSTEM");
 		for (int i = 0; i < chromebookList.size(); i++) {

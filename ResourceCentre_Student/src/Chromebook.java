@@ -10,7 +10,7 @@ public class Chromebook extends Item{
 	public String getOs() {
 		return os;
 	}
-	
+	//"I want to scream" - Sean Yong
 	public String toString(){
 
 		// Write your codes here
