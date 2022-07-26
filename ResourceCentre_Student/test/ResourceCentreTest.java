@@ -118,6 +118,7 @@ public class ResourceCentreTest {
 				String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
 				String testOutput = "";
 				assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
+//				yulong
 						
 				//Given an empty list, after adding 2 items, test if the size of the list is 2
 				ResourceCentre.addChromebook(chromebookList, cb1);
