@@ -279,6 +279,7 @@ public class ResourceCentreTest {
 				//normal
 				ResourceCentre.addChromebook(chromebookList, cb2);
 //yulong here
+//				cahir
 				cb2.setIsAvailable(false);
 
 				isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
